@@ -1266,7 +1266,7 @@ figure.slider figure figcaption {
 .sliderba{
   height: 65vw;
   display: flex;
-  background: url(./images/lighthouseatnightday.jpg) no-repeat;
+  background: url(images/lighthouseatnightday.jpg) no-repeat;
   position: relative;
   overflow: hidden;
   background-position: left;
@@ -1299,7 +1299,7 @@ figure.slider figure figcaption {
   position: absolute;
   width: 15%;
   height: 65vw;
-  background: url(./images/lighthouseatnight.jpg) no-repeat;
+  background: url(images/lighthouseatnight.jpg) no-repeat;
   overflow: hidden;
   background-position: left;
   background-size: cover;
@@ -1356,7 +1356,7 @@ figure.slider figure figcaption {
   display: flex;
 
 	
-  background: url(./images/lighthouseatnightday.jpg) no-repeat;
+  background: url(images/lighthouseatnightday.jpg) no-repeat;
   position: relative;
   overflow: hidden;
   background-position: left;
@@ -1389,7 +1389,7 @@ figure.slider figure figcaption {
   position: absolute;
   width: 15%;
   height: 70vw;
-  background: url(./images/lighthouseatnight.jpg) no-repeat;
+  background: url(images/lighthouseatnight.jpg) no-repeat;
   overflow: hidden;
   background-position: left;
   background-size: cover;
