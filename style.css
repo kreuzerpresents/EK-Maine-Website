@@ -1,7 +1,7 @@
 /* Load the variable font */
 @font-face {
   font-family: "Jost";
-  src: url('../fonts/Jost-VF.woff2') format('woff2');
+  src: url('../fonts/jost-VF.woff2') format('woff2');
   font-weight: 100 900; /* variable range */
   font-style: normal;
   font-display: swap;
