@@ -1,0 +1,1484 @@
+/* Load the variable font */
+@font-face {
+  font-family: "Jost";
+  src: url("fonts/Jost-VF.woff2") format("woff2");
+  font-weight: 100 900; /* variable range */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base styles */
+body {
+  font-family: "Jost", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 2rem;
+}
+
+/* Headings */
+
+.bodytitle {
+  font-family: "Jost", system-ui, sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  margin: 0;
+}
+
+
+h1 {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 200;
+}
+
+p {
+  font-family: "Jost", system-ui, sans-serif; /* use font */
+}
+
+/* Examples of variable weights */
+.hairline-text {
+  font-weight: 100;
+}
+
+.medium-text {
+  font-weight: 500;
+}
+
+.bold-text {
+  font-weight: 800;
+}
+
+.light-text {
+  font-weight: 300;
+}
+
+
+/* Styles for the entire list (ul) - these styles are inherited by li elements */
+.custom-list {
+  font-family: "Jost", system-ui, sans-serif;
+  font-size: 2.5vw;
+  line-height: 1.4;
+  padding-left: 3%;
+  list-style-type: square;
+  color: darkseagreen;
+}
+
+.custom-list li {
+  margin-bottom: 1rem;   /* replaces <br> */
+  font-weight: 300;      /* nice light Jost weight */
+}
+
+.custom-list li b {
+  font-weight: 500;      /* readable contrast */
+}
+
+@font-face {
+  font-family: "Blackadder ITC TT";
+  src: url("fonts/BlackadderITCTT.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+#page-wrap {
+     width: auto;
+     margin: .5 auto;
+}
+
+
+/* remove underline */
+a { text-decoration: none; }
+
+
+
+
+/* this adjusts size of images in body based on body sizing */
+
+p {
+  overflow: hidden;
+  max-width: 90ch;
+
+   
+}
+
+
+
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    background: white;
+}
+
+
+
+
+
+
+
+/* TOP BANNER With text -- center text */
+
+.banner {
+    background-color: #225C25;
+    width: 100%;
+    height: 120px;
+    position:relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+  margin-top: 6px;
+    
+}
+
+.captionTransbox{
+     height: 423px;
+     width: 300px;        
+     background-color: #ffffff;
+     opacity: 0.6;
+     filter: alpha(opacity=60);
+     /* For IE8 and earlier */
+}
+
+
+
+#captionTop {
+
+    text-align: center;
+    color: white;              
+    padding: 50% 20% 0% 5%;
+}
+#captionBottom {
+
+    color: white;            
+    padding: 0% 20% 20% 5%;
+}
+
+@media screen and (max-width: 700px) {
+.captionTransbox {
+    display: none;
+        }
+} 
+
+
+/* Default heading font */
+.heading-regular-h1 {
+
+  font-weight: 400;
+}
+
+/* Special light font heading (e.g. THE STAR AND PINE) */
+.heading-light-h2 {
+
+  font-weight: 300;
+}
+
+/* Optional for H4 */
+.heading-medium-h4 {
+
+  font-weight: 500;
+}
+
+/* Optional for H5 */
+.heading-small-h5 {
+
+  font-weight: 600;
+}
+
+/* 1st 2nd Container holding the image flex cut image and container the text */
+
+
+
+.heromain {
+margin-top: 5px;
+position: relative;
+background-size: cover;
+overflow-x:hidden;
+overflow-y:hidden;
+
+}
+
+
+
+.heromain-image {
+display: block;
+overflow: hidden;
+width: 100%;
+height: 55vh;
+object-fit: cover;  
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    
+justify-content: center;
+z-index:-1;
+z-index:-1;
+ 
+}
+
+
+
+.heromain-overlay {
+    z-index: 0;
+    text-align: left;
+    position: absolute;
+    width: 35%;
+    max-width: 40%; /* Set maximum width for responsiveness */
+    padding: 20px;
+    left: 82%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    color: darkgreen;
+    line-height: 1.25; /* Adjust line height as needed */
+    font-size: 1.75vw; /* Use viewport width for font size */
+    white-space: normal; /* Allow text to wrap */
+
+}
+
+
+
+/* 2nd Container holding the image flex cut image and container the text */
+
+.hero-2 {
+position: relative;
+background-size: cover;
+height: 55vh;
+margin:.5rem auto;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    
+
+    
+}
+
+.hero-2 .herotext-2 {
+background:rgba(255,255,255,0.8);
+color: black;    
+position: absolute;
+top:80%;
+width: 100%;
+padding:1rem;
+transform:translateY(-50%);  
+line-height: 1em;
+
+
+   
+    
+}
+
+
+
+
+
+/* 3rd Container keep size of page with text block added .bg */
+
+
+.hero-3 {
+
+   
+    
+/* box position*/   
+    
+    
+margin:.5rem auto;
+position: relative;
+
+
+}
+
+
+
+.bg3{
+width: 100%;
+z-index: 0;
+    
+}
+
+
+.hero-3 .herotext-3 {
+
+  
+background:rgba(255,255,255,0.8);
+color: black;    
+position: absolute;
+bottom: -6vh;
+width: 100%;
+padding:1rem;
+transform:translateY(-50%);  
+line-height: 1em;
+
+
+}
+
+
+/* responsive image left text right flexbox */
+
+
+
+
+
+
+
+
+
+/* Image - opacity - logo on top */
+
+
+.photo-container{
+width: 100%;
+max-width:auto;
+margin: 10px auto;
+position: relative;
+overflow: hidden;   
+
+    
+}
+
+.photounderlogo{
+display: block;
+width: 98%;
+margin: 0 auto;
+border-radius: 20px;
+
+    
+}
+    
+.opacity4img1{
+position: absolute;
+bottom: 81%;
+left: 35%;
+background-color: #0055A4;
+width: 31%;
+height: 10%;
+border-radius: 100px 100px 0 0;
+opacity: 100;
+
+    
+}
+
+
+
+.opacity4img2{
+position: absolute;
+bottom: 69.75%;
+left: 35%;
+background-color: #FFFFFF;
+width: 31%;
+height: 11.5%;
+border-radius: 0 0 0 0;
+opacity: 100;
+
+    
+}
+
+
+
+
+.opacity4img3{
+position: absolute;
+bottom: 60%;
+left: 35%;
+background-color: #EF4135;
+width: 31%;
+height: 10%;
+border-radius: 0 0 100 100;
+opacity: 100;
+
+    
+}
+
+
+
+
+.logo{
+position: absolute;
+width: 15%;
+bottom: 1.5%;
+left: 45%;
+z-index: 1;   
+background-color: whitesmoke;
+border-radius: 125px;       
+border: 2px solid rgba(255,255,255,.5);
+    
+    
+}
+
+.logosec{
+position: absolute;
+width: 35%;
+bottom: 75%;
+left: 50%;
+z-index: 1;
+
+    
+}
+
+
+.photounderlogo2{
+display: block;
+width: 98%;
+margin: 0 auto;
+border-radius: 0;
+
+    
+}
+
+
+
+
+.logo2{
+position: absolute;
+width: 30%;
+bottom: 72%;
+left: 8%;
+
+-webkit-filter: drop-shadow(1px 1px 1px #777);
+  filter: drop-shadow(1px 1px 1px #777);    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+/* audio stuff */
+
+
+
+
+
+#audio1 {
+ width: 100%;
+}
+
+
+
+
+
+
+
+
+/* framed image black,black, black */
+
+
+div.container {
+  width: 100%;
+
+  margin: 0 auto; /* to center the container */
+    
+}
+
+img {
+  width: 98%;
+  height: auto;
+}
+
+
+
+
+.thumbnail2up {
+  display:inline-block;
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+    
+}
+.thumbnail2up img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail2up img.portrait {
+    width: 100%;
+    height: auto;
+   margin: 0 auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Images STRETCH and resize image inside *hide rest of image */
+
+
+.thumbnailstretch {
+  display:inline-block;
+  width: 40%;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+    
+    
+}
+.thumbnailstretch img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    
+    
+}
+.thumbnailstretch img.portrait {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.35em;
+    margin-right: 5px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Images container constrained size image hids this is for exact size container*/
+
+.thumbnail {
+  display:inline-block;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+
+
+    
+}
+.thumbnail img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+    
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+    width: 100%;
+    height: auto;
+   margin: 0 auto;
+    
+}
+
+
+
+
+
+
+
+
+/* Images with rounded corners 10% or so -same as exact size*/
+
+
+.thumbnailcnr {
+  display:inline-block;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+border-radius: 10px;
+
+    
+}
+.thumbnailcnr img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+    
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnailcnr img.portrait {
+    width: 100%;
+    height: auto;
+   margin: 0 auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Images 6 inline reponsive CRRAAAAAAAAAAPPP*/
+
+
+
+
+/* Images container constrained size image hids this is for exact size container -- for inline6up*/
+
+
+
+
+.setsizev1--landscape {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.setsizev1--landscape img {
+  width: auto;
+  height: 100%;
+  
+    
+}
+
+
+
+.setsizev1--portrait {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 300px;
+  overflow: hidden;
+margin: 0;
+}
+
+.setsizev1--portrait img {
+  width: auto;
+  height: 100%;
+
+    
+}
+
+
+/* Images container constrained size image hids this is for exact size container -- for inline6up*/
+
+
+.setsizev2--landscape2 {
+  display: inline-block;
+  position: relative;
+  width: 580px;
+  height: 700px;
+  overflow: hidden;
+  margin: 0;
+    
+}
+
+.setsizev2--landscape2 img {
+  width: auto;
+  height: 100%;
+  
+    
+}
+
+
+
+.setsizev2--portrait2 {
+  display: inline-block;
+  position: relative;
+  width: 280px;
+  height: 700px;
+  overflow: hidden;
+margin: 0;
+    
+}
+
+.setsizev2--portrait2 img {
+  width: auto;
+  height: 100%;
+
+    
+}
+
+
+
+
+
+
+
+
+/* Images ROUND shadow line */
+
+
+
+.circular--landscapebw {
+  display: inline-block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+  
+}
+
+.circular--landscapebw img {
+  width: auto;
+  height: 100%;
+  margin-left: 0;
+  -webkit-filter: grayscale(100%) 
+          brightness(160%)
+          contrast(160%);
+  filter: grayscale(100%) 
+          brightness(120%)
+          contrast(120%);  
+}
+
+
+
+
+.circular--landscapebwhc {
+  display: inline-block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+  
+}
+
+.circular--landscapebwhc img {
+  width: auto;
+  height: 100%;
+  margin-left: 0;
+  -webkit-filter: grayscale(100%) 
+          brightness(160%)
+          contrast(160%);
+  filter: grayscale(100%) 
+          brightness(160%)
+          contrast(160%);  
+}
+
+
+
+
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: 0;
+}
+
+
+
+
+
+
+.circular--portraitbw {
+  display: inline-block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+      
+}
+
+.circular--portraitbw img {
+  width: 100%;
+  height: auto;
+  margin-left: 0;  
+  -webkit-filter: grayscale(100%) 
+          brightness(160%)
+          contrast(160%);
+  filter: grayscale(100%) 
+          brightness(120%)
+          contrast(120%);   
+}
+
+
+
+
+.circular--portraitbwhc {
+  display: inline-block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+      
+  
+    
+}
+
+.circular--portraitbwhc img {
+  width: 100%;
+  height: auto;
+  margin-left: 0;  
+  -webkit-filter: grayscale(100%) 
+          brightness(160%)
+          contrast(160%);
+  filter: grayscale(100%) 
+          brightness(160%)
+          contrast(160%);   
+}
+
+
+
+
+
+
+
+.circular--portrait {
+  display: inline-block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+    
+    
+    
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+  margin-left: 0;  
+    
+}
+
+
+
+
+
+
+/* TESSSTTT Images container constrained size image hides this is for exact size container -- for inline6up*/
+
+
+
+
+.setsizev2--landscape {
+display: inline-block;
+position: relative;
+width: 180px;
+height: 300px;
+overflow: hidden;
+margin: 0;
+}
+
+.setsizev2--landscape img {
+width: auto;
+height: 100%;
+  
+    
+}
+
+
+
+.setsizev2--portrait {
+display: inline-block;
+position: relative;
+width: 180px;
+height: 300px;
+overflow: hidden;
+margin: 0;
+}
+
+.setsizev2--portrait img {
+width: auto;
+height: 100%;
+
+    
+}
+
+
+
+
+
+/* images side by side table responsive add as many scale position as needed in html */
+
+.images4ups {
+max-width: 98%;
+Margin: .5px auto .5px auto;
+overflow: hidden;
+
+
+}
+  
+.photo4ups {
+display: table-cell;
+width: 35vh;
+table-layout: fixed;
+
+overflow: hidden;
+border: 3px solid white;
+
+	
+}
+  
+.photo4ups img {
+object-fit: cover;
+width: 1;
+height: 35vw;
+overflow: hidden;
+
+}
+
+
+/* END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SLIDER - Navigation-Responsive-Resizes */
+
+
+#image-slider {
+position: relative;
+width: 100%;
+padding-top: 50%; /* 1:1 Aspect Ratio */ 
+overflow-x:hidden;
+overflow-y:hidden;
+
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+   -webkit-transition: all linear 400ms;
+  -moz-transition: all linear 400ms;
+  -o-transition: all linear 400ms;
+  transition: all linear 400ms;   
+    
+    
+}
+
+#image-slider .image {
+position: absolute;
+width: 100%;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+top: 50%;
+transform: translate(0%, -50%);
+left: -500px;
+z-index: 1;
+opacity: 0;
+overflow-x:hidden;
+overflow-y:hidden;  
+  -webkit-transition: all linear 400ms;
+  -moz-transition: all linear 400ms;
+  -o-transition: all linear 400ms;
+  transition: all linear 400ms;
+    
+}
+#image-slider .caption {
+position: absolute;
+top: -50px;
+background-color: rgba(255, 255, 255, 0.8);
+width: 100%;
+padding: 5px;
+text-align: center;
+display: none;
+z-index: 10;
+  -webkit-transition: all linear 400ms;
+  -moz-transition: all linear 400ms;
+  -o-transition: all linear 400ms;
+  transition: all linear 400ms;
+
+}
+
+#image-slider .navigation {
+text-align: center;
+z-index: 8;
+bottom: -50px;
+position: absolute;
+background-color: rgba(255, 255, 255, 0.5);
+width: 100%;
+padding: 5px 0;
+  -webkit-transition: all linear 400ms;
+  -moz-transition: all linear 400ms;
+  -o-transition: all linear 400ms;
+  transition: all linear 400ms;
+}
+
+#image-slider .navigation a,
+#image-slider .next,
+#image-slider .prev {
+
+text-decoration: none;
+background-color: white;
+color: dimgray;
+display: inline-block;
+line-height: 20px;
+width: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+border-radius: 0;
+border: 0 solid rgb(48, 48, 48);
+z-index: 10;
+}
+
+#image-slider .next,
+#image-slider .prev {
+display: none;
+position: absolute;
+top: 50%;
+text-align: center;
+  -webkit-transition: left linear 400ms, right linear 400ms;
+  -moz-transition: left linear 400ms, right linear 400ms;
+  -o-transition: left linear 400ms, right linear 400ms;
+transition: left linear 400ms, right linear 400ms;
+
+}
+
+#image-slider .next:hover,
+#image-slider .prev:hover {
+background-color: rgb(192, 192, 192);
+}
+
+#image-slider .prev {
+left: -27px;
+}
+
+#image-slider .next {
+right: -27px;
+}
+
+#image-slider .navigation a:hover {
+background-color: rgb(192, 192, 192);
+}
+
+#image-slider:hover .navigation {
+bottom: 0;
+}
+
+#image-slider:hover .prev {
+left: 5px;
+}
+
+#image-slider:hover .next {
+right: 5px;
+}
+
+#image-slider:hover .caption {
+top: 0;
+}
+
+#image-slider span {
+display: none;
+position: fixed;
+}
+
+#image-slider span:target + .image {
+left: 0;
+z-index: 5;
+opacity: 1;
+}
+
+#image-slider span:target + .image + .caption,
+#image-slider span:target + .image + .caption + a,
+#image-slider span:target + .image + .caption + a + a,
+#image-slider .image.default + .caption,
+#image-slider .image.default + .caption + a,
+#image-slider .image.default + .caption + a + a {
+display: block;
+}
+
+#image-slider span:target ~ .image.default + .caption,
+#image-slider span:target ~ .image.default + .caption + a,
+#image-slider span:target ~ .image.default + .caption + a + a {
+display: none;
+}
+
+#image-slider .image.default {
+left: 0;
+z-index: 5;
+opacity: 1;
+}
+
+#image-slider span:target ~ .image.default {
+z-index: 1;
+opacity: 0;
+left: -500px;
+}
+
+
+
+
+
+/* SLIDER Automatic Full page width with captions */
+
+@keyframes slidy {
+0% { left: 0%; }
+13% { left: 0%; }
+17% { left: -100%; }
+30% { left: -100%; }
+34% { left: -200%; }
+47% { left: -200%; }
+51% { left: -300%; }
+64% { left: -300%; }
+68% { left: -400%; }
+81% { left: -400%; }
+85% { left: -500%; }
+97% { left: -500%; }
+100% { left: -600%; }
+}
+* {
+  box-sizing: border-box;
+}
+body { margin: 0; }
+
+figure { 
+margin: 0;
+
+}
+div#captioned-gallery { 
+width: 100%; overflow: hidden; 
+
+}
+figure.slider { 
+  position: relative; width: 700%;
+  font-size: 0; animation: 30s slidy infinite; 
+  margin-bottom: 18px;
+}
+figure.slider figure { 
+  width: 14.285%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; top: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem;
+  text-align: center;
+}
+
+
+
+
+
+
+/* TEST Comparison before/after SLIDER */
+
+
+.sliderbafwholder1{
+  max-width: 96vw;
+  position: relative;
+  overflow: hidden;
+
+    
+}
+
+
+.sliderba{
+  height: 65vw;
+  display: flex;
+  background: url(images/lighthouseatnightday.jpg) no-repeat;
+  position: relative;
+  overflow: hidden;
+  background-position: left;
+  background-size: cover;
+  outline-color: white;
+  outline-style: solid;
+  outline-width: thin;
+}
+ 
+.sliderba input{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background: none;
+  z-index: 10;
+}
+ 
+.sliderba input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 1.25vw;
+  height: 20vw;
+  background-color: white;
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+
+.originalba-image{
+  display: block;
+  position: absolute;
+  width: 15%;
+  height: 65vw;
+  background: url(images/lighthouseatnight.jpg) no-repeat;
+  overflow: hidden;
+  background-position: left;
+  background-size: cover;
+  outline-color: white;
+  outline-style: solid;
+  outline-width: thin;
+}
+
+
+ .toprightbatext {
+  position: absolute;
+  top: 2vh;
+  right: 4vh;
+  color: white;
+  font-size: 100%;
+}
+
+ .topleftbatext {
+  position: absolute;
+  top: 2vh;
+  right: 4vh;
+  color: white;
+  font-size: 100%;
+}
+
+
+
+
+
+
+/* END */
+
+
+
+
+
+
+
+
+/* TEST FULL WIDTH Comparison before/after SLIDER */
+
+
+.sliderbafwholder{
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+    
+}
+.sliderbafw{
+  max-width: 100vw;
+  height: 70vw;
+  display: flex;
+
+	
+  background: url(images/lighthouseatnightday.jpg) no-repeat;
+  position: relative;
+  overflow: hidden;
+  background-position: left;
+  background-size: cover;
+  outline-color: white;
+  outline-style: solid;
+  outline-width: thin;
+    
+}
+ 
+.sliderbafw input{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background: none;
+  z-index: 10;
+}
+ 
+.sliderbafw input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 1.25vw;
+  height: 20vw;
+  background-color: white;
+  opacity: 0.65;
+  cursor: pointer;
+}
+ 
+.originalbafw-image{
+  display: block;
+  position: absolute;
+  width: 15%;
+  height: 70vw;
+  background: url(images/lighthouseatnight.jpg) no-repeat;
+  overflow: hidden;
+  background-position: left;
+  background-size: cover;
+  outline-color: white;
+  outline-style: solid;
+  outline-width: thin;
+}
+
+ .toplefttextbafw {
+  position: absolute;
+  top: 2vh;
+  right: 5vh;
+  font-family: "Helvetica";
+  color: white;
+  font-size: 100%;
+}
+
+.toprighttextbafw {
+  position: absolute;
+  top: 2vh;
+  right: 5vh;
+  font-family: "Helvetica";
+  color: white;
+  font-size: 100%;
+}
+
+
+
+
+
+/* Bottom Banner with image and text on top with link to top of page */
+
+.btmbannerwrap {
+  position: relative;
+  width: 100%;
+
+  background-color: #225C25;
+  border-color: #225C25;
+  border-top: 6px solid #225C25; /* Ensure style is included */
+    border-bottom: 6px solid #225C25;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+}
+
+.banner-image-1 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #225C25;
+}
+
+.banner-title {
+  font-size: 4vw;      /* Larger text */
+  font-weight: normal;
+  line-height: .75;
+}
+
+.banner-link {
+  font-size: 2.5vw;    /* Smaller text */
+  font-weight: normal;
+  color: #225C25;
+  text-decoration: none;
+  line-height: .25;
+}
+
+
+/* END */
+
+
+
+
+
+
+
